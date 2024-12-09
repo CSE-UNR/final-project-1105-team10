@@ -8,7 +8,7 @@
 void readDecodedStory(const char *filename, char *buffer, int bufferSize) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
-        printf("Error: Could not open file %s for reading.\n", filename);
+        printf("Could not open file %s", filename);
         return;
     }
 
@@ -24,7 +24,7 @@ void readDecodedStory(const char *filename, char *buffer, int bufferSize) {
 
 // Display story
 void displayStory(const char *story) {
-    printf("Here's your completed story:\n\n");
+    printf("Complete:\n\n");
     printf("%s\n", story);
 }
 
