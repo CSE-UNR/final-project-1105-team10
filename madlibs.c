@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Function to read the decoded story from a file
+// Read Decode 
 void readDecodedStory(const char *filename, char *buffer, int bufferSize) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
@@ -17,12 +17,12 @@ void readDecodedStory(const char *filename, char *buffer, int bufferSize) {
     while ((ch = fgetc(file)) != EOF && i < bufferSize - 1) {
         buffer[i++] = ch;
     }
-    buffer[i] = '\0'; // Null-terminate the string
+    buffer[i] = '\0'; 
 
     fclose(file);
 }
 
-// Function to display the story to the console
+// Display story
 void displayStory(const char *story) {
     printf("Here's your completed story:\n\n");
     printf("%s\n", story);
