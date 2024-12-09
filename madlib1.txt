@@ -3,8 +3,8 @@ cold
 cat
 dog
 run
-tree
-couch
+house
+phone
 car
-candle
-box
+ring
+hair
